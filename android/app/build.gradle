@@ -6,17 +6,20 @@ plugins {
 }
 
 android {
+
+    def javaVersion = JavaVersion.VERSION_17
+
     namespace = "com.github.axiopisty.tutorial_flutter_redux_navigation"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = javaVersion
+        targetCompatibility = javaVersion
     }
 
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8
+        jvmTarget = javaVersion
     }
 
     defaultConfig {
